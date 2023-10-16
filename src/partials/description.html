@@ -37,12 +37,27 @@
       </li>
     </ul>
     <div class="description__img">
-      <img
-        src="./images/1x/description.png"
-        alt="description"
-        width="860"
-        height="476"
-      />
+      <picture>
+        <source
+          srcset="
+            ./images/1x/description.png    1x,
+            ./images/2x/description@2x.png 2x
+          "
+          media="(min-width:768px)"
+          type="image/png"
+          width="100%"
+        />
+        <source
+          srcset="
+            ./images/1x/description.png    1x,
+            ./images/3x/description@3x.png 3x
+          "
+          media="(min-width:370px)"
+          type="image/png"
+          width="100%"
+        />
+        <img src="./images/1x/description.png" alt="Description" />
+      </picture>
     </div>
   </div>
 </section>

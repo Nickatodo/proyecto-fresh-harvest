@@ -66,6 +66,8 @@ p {
 
 @media (max-width: 767px){
     .container {
-        width: 480px;
+        width: 375px;
+        padding-left: 20px;
+        padding-right: 20px;        
     }
 }
