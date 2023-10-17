@@ -1,0 +1,61 @@
+<section>
+  <div class="container">
+    <div class="covered__position">
+      <div class="div__tittle">
+        <h2 class="covered__tittle">FRESH HARVEST BOX HAS GOT YOU COVERED</h2>
+      </div>
+      <div class="covered__div">
+        <picture>
+          <source
+            srcset="./images/1x/melon.png 1x, ./images/2x/melon@2x.png 2x"
+            media="(min-width:768px)"
+            width="100%"
+            type="image/png"
+          />
+          <source
+            srcset="./images/1x/melon.png 1x, ./images/3x/melon@3x.png 3x"
+            media="(min-width:370px)"
+            width="100%"
+            type="image/png"
+          />
+          <img src="./images/1x/melon.png" alt="melon" />
+        </picture>
+        <picture>
+          <source
+            srcset="
+              ./images/1x/blueberry.png    1x,
+              ./images/2x/blueberry@2x.png 2x
+            "
+            media="(min-width:768px)"
+            width="100%"
+            type="image/png"
+          />
+          <img
+            class="covered__blueberry"
+            src="./images/1x/blueberry.png"
+            alt="blueberry"
+          />
+        </picture>
+      </div>
+    </div>
+    <p class="covered__text">
+      Our boxes are packed with delicious, nutritious fruits and vegetables,
+      perfect for anyone looking to eat healthier or support local farmers.
+      Order your box today and start enjoying the best that nature has to offer!
+    </p>
+    <div class="covered__form">
+      <form method="post">
+        <label for="mailto"></label>
+        <input
+          class="covered__input"
+          type="email"
+          id="mailto"
+          name="email"
+          placeholder="Enter email..."
+          required
+        />
+        <input class="covered__btn" type="submit" value="send" />
+      </form>
+    </div>
+  </div>
+</section>
