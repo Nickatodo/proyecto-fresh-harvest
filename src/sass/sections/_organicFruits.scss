@@ -90,6 +90,7 @@ margin:7 0 0 24;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap: 10px;
     flex-shrink: 0;
     background-color: $color-primary;
@@ -97,12 +98,14 @@ margin:7 0 0 24;
     margin: 5 0 24 24;
 }
 .price{
+    
 color: $main-color;
 font-family: DM Sans;
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 133.333% */
+text-align: center;
 letter-spacing: -0.72px;
 }
 
@@ -150,14 +153,15 @@ margin: 0;
  {
     .Fruits-position{
         background-color:$main-color ;
-        width: relative;
+        width: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 44px;
     }
     .Fruits-information{
-        width: 335px;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -174,11 +178,13 @@ margin: 0;
         width: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        margin: 0;
         gap: 14px;
     }
     .fruit__card{
-        width: 335px;
+        width: 250px;
     }
 }
 /*estilos para pantallas de 768px*/
@@ -199,6 +205,38 @@ margin: 0;
     .fruit__card{
         width: 340px;
     }
+}
+
+.icons {
+    position: relative;
+    width: 114px;
+    height: 114px;
+    transform: rotate(-25deg);
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+}
+.order-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+
+.icon, .order-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%,);
+    
 }
 
 
