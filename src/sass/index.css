@@ -711,18 +711,17 @@ p {
   margin: 0;
 }
 
-/*estilos para las pantallas de 375px */
-@media (max-width: 375px) {
+/*estilos para una pantalla de 360px */
+@media (max-width: 361px) {
   .Fruits-position {
     background-color: rgb(174, 19, 50);
-    width: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 44px;
   }
   .Fruits-information {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -733,10 +732,45 @@ p {
     font-size: 28px;
   }
   .fruits-description {
-    width: 334px;
+    width: 100%;
   }
   .fruits-position {
-    width: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 0;
+    gap: 14px;
+  }
+  .fruit__card {
+    width: 100%;
+  }
+}
+/*estilos para las pantallas de 480px */
+@media (max-width: 480px) {
+  .Fruits-position {
+    background-color: rgb(174, 19, 50);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+  .Fruits-information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+  .fruits-title {
+    font-size: 28px;
+  }
+  .fruits-description {
+    width: 100%;
+  }
+  .fruits-position {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -745,7 +779,7 @@ p {
     gap: 14px;
   }
   .fruit__card {
-    width: 250px;
+    width: 100%;
   }
 }
 /*estilos para pantallas de 768px*/
@@ -762,7 +796,7 @@ p {
     gap: 16px;
   }
   .fruit__card {
-    width: 340px;
+    width: 100%;
   }
 }
 .icons {

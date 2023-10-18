@@ -148,34 +148,73 @@ letter-spacing: -0.72px;
 text-transform: uppercase;
 margin: 0;
 }
-/*estilos para las pantallas de 375px */
-@media (max-width: 375px)
- {
-    .Fruits-position{
-        background-color:$main-color ;
-        width: auto;
+/*estilos para una pantalla de 360px */
+@media (max-width: 361px) {
+    .Fruits-position {
+        background-color: $main-color;
+        width: 100%; 
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 44px;
     }
-    .Fruits-information{
-        
+    .Fruits-information {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 14px;
     }
-    .fruits-title{
+    .fruits-title {
         font-size: 28px;
     }
-    .fruits-description{
-        width: 334px;
+    .fruits-description {
+        width: 100%; 
     }
-    .fruits-position{
-        width: auto;
+    .fruits-position {
+        width: 100%; 
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(10, 1fr);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        margin: 0;
+        gap: 14px;
+    }
+    .fruit__card {
+        width: 100%;
+    }
+}
+
+
+
+/*estilos para las pantallas de 480px */
+@media (max-width: 480px) {
+    .Fruits-position {
+        background-color: $main-color;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+    .Fruits-information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .fruits-title {
+        font-size: 28px;
+    }
+    .fruits-description {
+        width: 100%; 
+    }
+    .fruits-position {
+        width: 100%; 
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -183,8 +222,8 @@ margin: 0;
         margin: 0;
         gap: 14px;
     }
-    .fruit__card{
-        width: 250px;
+    .fruit__card {
+        width: 100%;
     }
 }
 /*estilos para pantallas de 768px*/
@@ -203,7 +242,7 @@ margin: 0;
         gap: 16px;
     }
     .fruit__card{
-        width: 340px;
+        width: 100%;
     }
 }
 
