@@ -1,0 +1,231 @@
+@import '../utils/variables';
+
+.ul{
+    list-style-type: none;
+}
+.Fruits-position{
+    background-color:$main-color ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+}
+.Fruits-information{
+    margin: 0;
+    width: 624px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.fruits-title{
+    color:$color-primary;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family:$font-family;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px; /* 110% */
+    letter-spacing: -1.6px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.fruits-description{
+    width:500px ;
+    margin: 0;
+    color: $color-primary;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+}
+.fruits-position{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+.fruit__card{
+    width: 390px;
+    height: 465px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+.fruit-img{
+    width: 295px;
+    height:251px;
+    margin-left: 47.5px;
+}
+.title__card{
+color: $color-primary;
+font-family: DM Sans;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px; /* 118.75% */
+letter-spacing: -1.28px;
+text-transform: capitalize;
+margin:64 0 0 24;
+}
+.plant{
+color: $color-primary;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: -0.36px;
+margin:7 0 0 24;
+}
+.bg-price{
+    width: 136px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background-color: $color-primary;
+    border-radius: 20px;
+    margin: 5 0 24 24;
+}
+.price{
+color: $main-color;
+font-family: DM Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 133.333% */
+letter-spacing: -0.72px;
+}
+
+.order__svg {
+    position: relative;
+    margin: 44 550;
+    width: 114px;
+    height: 114px;
+}
+.order__svg svg {
+    width: 100%;
+    height: 100%;
+}
+
+.order__svg span,
+.order__svg svg:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.order{
+color: $color-primary;
+text-align: center;
+text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+font-family:$font-family;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 133.333% */
+letter-spacing: -0.72px;
+text-transform: uppercase;
+margin: 0;
+}
+/*estilos para las pantallas de 375px */
+@media (max-width: 375px)
+ {
+    .Fruits-position{
+        background-color:$main-color ;
+        width: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 44px;
+    }
+    .Fruits-information{
+        width: 335px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+    }
+    .fruits-title{
+        font-size: 28px;
+    }
+    .fruits-description{
+        width: 334px;
+    }
+    .fruits-position{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+    .fruit__card{
+        width: 335px;
+    }
+}
+/*estilos para pantallas de 768px*/
+@media (max-width: 768px)
+ {
+    .Fruits-position{
+        background-color:$main-color ;
+        width: relative;
+
+        gap: 44px;
+    }
+    .fruits-position{
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .fruit__card{
+        width: 340px;
+    }
+}
+
+
+.strawberry__card {
+    background-color:$color-bg-strawberry;
+}
+.banana__card{
+    background-color: $color-bg-banana;
+}
+.watermelon__card{
+    background-color: $color-button;
+}
+.lime__card{
+    background-color: $color-bg-lemon;
+}
+.apple__card{
+    background-color: $color-bg-apple;
+}
+.peach__card{
+    background-color: $color-bg-peach;
+}
+.plums__card{
+    background-color: $color-bg-plums;
+}
+.orange__card{
+    background-color: $color-bg-orange;
+}
+.kiwi__card{
+    background-color: $color-bg-kiwi;
+}
