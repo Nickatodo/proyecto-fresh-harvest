@@ -11,10 +11,10 @@
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
-    color: $color-primary;
+    // color: $color-primary;
     letter-spacing: 0.03em;
     margin: 0px;
-    background-color: $main-color;
+    // background-color: $main-color;
 }
 
 h1 {
@@ -44,7 +44,9 @@ h6 {
 p {
     margin-top: 0;
 }
-
+a{
+    text-decoration: none;
+}
 .list {
     list-style: none;
     padding-left: 0;
@@ -53,9 +55,11 @@ p {
 
 .container {
     width: 1280px;
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
     margin: 0 auto;
+    
+   
 }
 
 @media (max-width: 1179px) {
