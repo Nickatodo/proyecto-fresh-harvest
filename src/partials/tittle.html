@@ -1,66 +1,141 @@
-<div class="container">
-  <div class="hero">
-    <h1 class="tittle">
-      fresh harvest box <br />
-      is your one-stop place for <br />a delicious fruit basket
-    </h1>
-    <div class="frame"></div>
-    <img src="./images/1x/title.png" alt="image hero" class="hero__image" />
-    <button class="hero__frame2">
-      shop <br />
-      now
-    </button>
-
-    <img
-      src="./images/1x/strawberry.png"
-      alt="image strawberry"
-      class="hero__strawberry"
-    />
-    <img
-      src="./images/1x/banana.png"
-      alt="image banana"
-      class="hero__banana"
-    />
-    <p class="hero__text--description">
-      Our expertly curated fruit baskets are made with the freshest, highest
-      quality fruits available. Whether you are looking for a healthy snack or a
-      gift for a loved one, Fresh Harvest Box has got you covered.
-    </p>
-
-    <div class="card">
-      <p class="card__tittle">Fruit</p>
-      <img
-        src="./images/1x/watermelon.png"
-        alt="image watermelon"
-        class="card__image"
-      />
-      <p class="card__text">
-        Refreshing and juicy, watermelon is the perfect summer treat and a great
-        source of hydration
+<section class="hero_title">
+  <div class="container">
+    <div class="hero">
+      <h1 class="tittle">
+        fresh harvest box <br />
+        is your one-stop place for <br />a delicious fruit basket
+      </h1>
+      <div class="frame"></div>
+      <picture class="hero__image">
+        <source
+          srcset="./images/1x/title.png 1x, ./images/2x/title@2x.png 2x"
+          media="(min-width:768px)"
+          type="image/png"
+          width="100%"
+        />
+        <source
+          srcset="./images/1x/title.png 1x, ./images/3x/title@3x.png 3x"
+          media="(min-width:370px)"
+          type="image/png"
+          width="90%"
+        />
+        <img src="./images/1x/title.png" alt="title" />
+      </picture>
+      <button class="hero__frame2">
+        shop <br />
+        now
+      </button>
+      <picture class="hero__strawberry">
+        <source
+          srcset="
+            ./images/1x/strawberry.png    1x,
+            ./images/2x/strawberry@2x.png 2x
+          "
+          media="(min-width:768px)"
+          type="image/png"
+          width="120px"
+        />
+        <source
+          srcset="
+            ./images/1x/strawberry.png    1x,
+            ./images/3x/strawberry@3x.png 3x
+          "
+          media="(min-width:370px)"
+          type="image/png"
+          width="56px"
+        />
+        <img src="./images/1x/strawberry.png" alt="strawberry" />
+      </picture>
+      <picture class="hero__banana">
+        <source
+          srcset="./images/1x/banana.png 1x, ./images/2x/banana@2x.png 2x"
+          media="(min-width:768px)"
+          type="image/png"
+          width="183px"
+        />
+        <source
+          srcset="./images/1x/banana.png 1x, ./images/3x/banana@3x.png 3x"
+          media="(min-width:370px)"
+          type="image/png"
+          width="66px"
+        />
+        <img src="./images/1x/banana.png" alt="banana" />
+      </picture>
+      <p class="hero__text--description">
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
       </p>
-    </div>
+      <div class="card">
+        <p class="card__tittle">Fruit</p>
+        <picture>
+          <source
+            srcset="
+              ./images/1x/watermelon.png    1x,
+              ./images/2x/watermelon@2x.png 2x
+            "
+            media="(min-width:768px)"
+            type="image/png"
+            width="100%"
+          />
+          <source
+            srcset="
+              ./images/1x/watermelon.png    1x,
+              ./images/3x/watermelon@3x.png 3x
+            "
+            media="(min-width:370px)"
+            type="image/png"
+            width="100%"
+          />
+          <img src="./images/1x/watermelon.png" alt="watermelon" />
+        </picture>
+        <p class="card__text">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
 
-    <div class="card2">
-      <p class="card__tittle2">Fruit</p>
-      <img
-        src="./images/1x/strawberry_basket.png"
-        alt="image strawberry_basket"
-        class="card__image2"
-      />
-      <p class="card__text2">
-        Sweet and juicy, strawberries are packed with vitamin C and
-        antioxidants, making them a delicious and healthy snack
-      </p>
-    </div>
+      <div class="card2">
+        <p class="card__tittle2">Fruit</p>
+        <picture>
+          <source
+            srcset="
+              ./images/1x/strawberry_basket.png    1x,
+              ./images/2x/strawberry_basket@2x.png 2x
+            "
+            media="(min-width:768px)"
+            type="image/png"
+            width="100%"
+          />
+          <source
+            srcset="
+              ./images/1x/strawberry_basket.png    1x,
+              ./images/3x/strawberry_basket@3x.png 3x
+            "
+            media="(min-width:370px)"
+            type="image/png"
+            width="100%"
+          />
+          <img
+            src="./images/1x/strawberry_basket.png"
+            alt="strawberry_basket"
+          />
+        </picture>
+        <p class="card__text2">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
+      </div>
 
-    <div class="hero__buttons">
-      <p class="hero__button--organic">#organic</p>
-      <p class="hero__button--organic">#products</p>
-    </div>
+      <div class="hero__buttons">
+        <p class="hero__button--organic">#organic</p>
+        <p class="hero__button--organic">#products</p>
+      </div>
 
-    <div class="hero__buttons2">
-      <p class="hero__button--organic">#basket</p>
-      <p class="hero__button--organic">#fruits</p>
+      <div class="hero__buttons2">
+        <p class="hero__button--organic">#basket</p>
+        <p class="hero__button--organic">#fruits</p>
+      </div>
     </div>
   </div>
-</div>
+</section>
