@@ -1,0 +1,149 @@
+<div data-modal class="modal is-hidden">
+  <div class="modal__div">
+    <button data-modal-close class="modal__btn_cerrar">
+      <svg width="18px" height="18px">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__titulo">YOUR ORDER</p>
+    <form class="formulario">
+      <ul class="formulario__items list">
+        <li class="formulario__item1">
+          <p class="item__title">Strawberry Basket</p>
+          <p class="item__subtitle">Plant</p>
+          <picture>
+            <source
+              srcset="
+                ./images/1x/strawberry_basket.png    1x,
+                ./images/2x/strawberry_basket@2x.png 2x
+              "
+              media="(min-width:768px)"
+              type="image/png"
+              width="100%"
+            />
+            <source
+              srcset="
+                ./images/1x/strawberry_basket.png    1x,
+                ./images/3x/strawberry_basket@3x.png 3x
+              "
+              media="(min-width:370px)"
+              type="image/png"
+              width="100%"
+            />
+            <img
+              src="./images/1x/strawberry_basket.png"
+              alt="strawberry_basket"
+            />
+          </picture>
+        </li>
+        <li class="formulario__item2">
+          <p class="item__title">Apple Basket</p>
+          <p class="item__subtitle">Plant</p>
+          <picture>
+            <source
+              srcset="
+                ./images/1x/apple_basket.png    1x,
+                ./images/2x/apple_basket@2x.png 2x
+              "
+              media="(min-width:768px)"
+              type="image/png"
+              width="100%"
+            />
+            <source
+              srcset="
+                ./images/1x/apple_basket.png    1x,
+                ./images/3x/apple_basket@3x.png 3x
+              "
+              media="(min-width:370px)"
+              type="image/png"
+              width="100%"
+            />
+            <img src="./images/1x/apple_basket.png" alt="apple_basket" />
+          </picture>
+        </li>
+        <li class="formulario__item3">
+          <p class="item__title">Fruits Basket</p>
+          <p class="item__subtitle">Plant</p>
+          <picture>
+            <source
+              srcset="
+                ./images/1x/fruits_basket.png    1x,
+                ./images/2x/fruits_basket@2x.png 2x
+              "
+              media="(min-width:768px)"
+              type="image/png"
+              width="100%"
+            />
+            <source
+              srcset="
+                ./images/1x/fruits_basket.png    1x,
+                ./images/3x/fruits_basket@3x.png 3x
+              "
+              media="(min-width:370px)"
+              type="image/png"
+              width="100%"
+            />
+            <img src="./images/1x/fruits_basket.png" alt="strawberry_basket" />
+          </picture>
+        </li>
+      </ul>
+      <ul class="formulario__inputs list">
+        <li class="formulario__input">
+          <div class="formulario__div">
+            <input
+              class="input"
+              type="text"
+              name="nombre"
+              placeholder="Enter full name..."
+            />
+          </div>
+          <div class="formulario__div">
+            <input
+              class="input"
+              type="mail"
+              name="mail"
+              placeholder="Enter email..."
+            />
+          </div>
+          <div class="formulario__div">
+            <input
+              class="input"
+              type="text"
+              name="card"
+              placeholder="Enter card.."
+            />
+          </div>
+          <div class="formulario__textarea">
+            <textarea
+              class="input_textarea"
+              name="coment"
+              placeholder="Enter comments..."
+            ></textarea>
+          </div>
+          <button data-modal-open2 class="formulario__btn">Submit</button>
+        </li>
+        <li>
+          <picture>
+            <source
+              srcset="./images/1x/person.png 1x, ./images/2x/person@2x.png 2x"
+              media="(min-width:768px)"
+              type="image/png"
+              width="100%"
+            />
+            <source
+              srcset="./images/1x/person.png 1x, ./images/3x/person@3x.png 3x"
+              media="(min-width:370px)"
+              type="image/png"
+              width="100%"
+            />
+            <img
+              src="./images/1x/person.png"
+              alt="person"
+              style="margin-top: 40px"
+            />
+          </picture>
+        </li>
+      </ul>
+    </form>
+  </div>
+</div>
