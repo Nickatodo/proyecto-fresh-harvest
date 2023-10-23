@@ -51,6 +51,12 @@ p {
     margin: 0;
 }
 
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
 .container {
     width: 1280px;
     padding-left: 32px;

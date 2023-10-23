@@ -3,15 +3,17 @@
     <!-- Nav -->
 
     <nav class="header-nav">
-      <ul class="menu">
+      <ul class="menu list">
         <li class="menu-item">
-          <a class="menu-link menu-font" href="#how-it-works">How It Works</a>
+          <a class="menu-link menu-font link" href="#how-it-works"
+            >How It Works</a
+          >
         </li>
         <li class="menu-item">
-          <a class="menu-link menu-font" href="#fruits">Fruits</a>
+          <a class="menu-link menu-font link" href="#fruits">Fruits</a>
         </li>
         <li class="menu-item">
-          <a class="menu-link menu-font" href="#contacts">Contacts</a>
+          <a class="menu-link menu-font link" href="#contacts">Contacts</a>
         </li>
       </ul>
     </nav>
@@ -31,7 +33,11 @@
       </svg>
     </button>
 
-    <button class="menu-toggle color-change js-open-menu" type="button">
+    <button
+      class="menu-toggle color-change js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
       <svg class="burger-icon" width="24" height="24">
         <use class="" href="./images/icons.svg#burger-left"></use>
       </svg>

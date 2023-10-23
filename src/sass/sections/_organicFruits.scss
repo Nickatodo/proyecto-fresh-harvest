@@ -97,15 +97,15 @@ margin:7 0 0 24;
     border-radius: 20px;
     margin: 5 0 24 24;
 }
-.price{
-    
-color: $main-color;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px; /* 133.333% */
-text-align: center;
-letter-spacing: -0.72px;
+.price{    
+    color: $main-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    text-align: center;
+    letter-spacing: -0.72px;
+    margin: 0;
 }
 
 .order__svg {
@@ -204,7 +204,30 @@ margin: 0;
     }
 }
 
+/*estilos para pantallas de 768px*/
+@media (max-width: 768px) {
+    .Fruits-position {
+        background-color: $main-color ;
+        width: relative;
 
+        gap: 44px;
+    }
+
+    .fruits-position {
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .fruit__card {
+        width: 344px;
+    }
+
+    .fruit-img {
+        margin-left: 31.5px;
+    }
+}
 
 /*estilos para las pantallas de 480px */
 @media (max-width: 480px) {
@@ -239,26 +262,7 @@ margin: 0;
         gap: 14px;
     }
     .fruit__card {
-        width: 100%;
-    }
-}
-/*estilos para pantallas de 768px*/
-@media (max-width: 768px)
- {
-    .Fruits-position{
-        background-color:$main-color ;
-        width: relative;
-
-        gap: 44px;
-    }
-    .fruits-position{
-        width: auto;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
-        gap: 16px;
-    }
-    .fruit__card{
-        width: 100%;
+        width: 335px;
     }
 }
 

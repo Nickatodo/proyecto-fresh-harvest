@@ -1,8 +1,8 @@
 .footer-section {
     padding: 80px 0;
 
-    background-color: var(--color-white);
-    color: var(--color-bg-red);
+    background-color: $color-primary;
+    color: $main-color;
 }
 
 
@@ -29,19 +29,17 @@
 }
 
 
-
 .footer-img {
     margin-bottom: 20px;
 }
 .footer-logo {
     display: flex;
     justify-content: center;
-
+    color: $main-color;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
-    
     transition: transform var(--var-1-animation);
 }
 
@@ -52,7 +50,7 @@
 
 .footer-logo-img {
     margin-right: 8px;
-    fill: var(--color-bg-red);
+    fill: $main-color;
 }
 
 .footer-nav {
@@ -79,35 +77,17 @@
   }
 }
 
-.footer-nav-item {
-    
-}
 .footer-nav-link {
     text-transform: capitalize;
     line-height: 1.29;
     padding: 7px 8px;
-
+    color: $main-color;
     transition: color var(--var-2-animation), border var(--var-2-animation);
 }
 
 .footer-nav-link:hover,
 .footer-nav-link:focus {
-  color: var(--color-green);
-
-  border-radius: 20px;
-  border-bottom: 3px solid var(--color-green);
-}
-
-.footer-nav-item:nth-child(2) .footer-nav-link:hover,
-.footer-nav-item:nth-child(2) .footer-nav-link:focus {
-  color: var(--color-yellow);
-  border-bottom: 3px solid var(--color-yellow);
-}
-
-.footer-nav-item:nth-child(3) .footer-nav-link:hover,
-.footer-nav-item:nth-child(3) .footer-nav-link:focus {
-  color: #747bff;
-  border-bottom: 3px solid #747bff;
+  color: $color-bg-green;
 }
 
 .footer-socials {
@@ -133,9 +113,6 @@
     }
 }
 
-.footer-socials-item {
-
-}
 .footer-socials-link {
     display: flex;
     align-items: center;
@@ -152,10 +129,8 @@
 @media only screen and (min-width: 1280px) {
     .footer-socials-link {
 
-        width: 44px;
-        height: 44px;}
-
-        
+    width: 44px;
+    height: 44px;}
 }
 
 .footer-socials-link:hover,
@@ -165,7 +140,7 @@
 
 .footer-socials-img {
     display: block;
-    fill: var(--color-bg-red);
+    fill: $main-color;
 }
 
 .footer-contacts {
@@ -175,7 +150,6 @@
     flex-wrap: wrap;
     /* justify-content: center; */
     gap: 14px;
-
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
@@ -200,20 +174,18 @@
 }
 
 .footer-contacts-link {
+    color: $main-color;
     transition: color var(--var-1-animation), border var(--var-1-animation);
 }
 
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
-    color: var(--color-green);
-
-    /* border-radius: 20px;
-    border-bottom: 3px solid var(--color-green); */
+    color: $color-bg-green;
 }
 .go-top {
     position: fixed;
-    right: 25px;
-    bottom: 25px;
+    right: 20px;
+    bottom: 20px;
     cursor: pointer;
     font-size: 20px;
     padding: 11px;
