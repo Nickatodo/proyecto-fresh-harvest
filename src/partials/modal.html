@@ -19,7 +19,7 @@
               "
               media="(min-width:768px)"
               type="image/png"
-              width="100%"
+              width="90%"
             />
             <source
               srcset="
@@ -28,11 +28,12 @@
               "
               media="(min-width:370px)"
               type="image/png"
-              width="100%"
+              width="30%"
             />
             <img
               src="./images/1x/strawberry_basket.png"
               alt="strawberry_basket"
+              class="item__img1"
             />
           </picture>
         </li>
@@ -56,9 +57,13 @@
               "
               media="(min-width:370px)"
               type="image/png"
-              width="100%"
+              width="30%"
             />
-            <img src="./images/1x/apple_basket.png" alt="apple_basket" />
+            <img
+              src="./images/1x/apple_basket.png"
+              alt="apple_basket"
+              class="item__img2"
+            />
           </picture>
         </li>
         <li class="formulario__item3">
@@ -81,9 +86,13 @@
               "
               media="(min-width:370px)"
               type="image/png"
-              width="100%"
+              width="30%"
             />
-            <img src="./images/1x/fruits_basket.png" alt="strawberry_basket" />
+            <img
+              src="./images/1x/fruits_basket.png"
+              alt="strawberry_basket"
+              class="item__img3"
+            />
           </picture>
         </li>
       </ul>
@@ -120,7 +129,9 @@
               placeholder="Enter comments..."
             ></textarea>
           </div>
-          <button data-modal-open2 class="formulario__btn">Submit</button>
+          <button data-modal-open2 class="formulario__btn" type="button">
+            Submit
+          </button>
         </li>
         <li>
           <picture>
@@ -135,11 +146,12 @@
               media="(min-width:370px)"
               type="image/png"
               width="100%"
+              style="display: none"
             />
             <img
               src="./images/1x/person.png"
               alt="person"
-              style="margin-top: 40px"
+              class="formulario__img_person"
             />
           </picture>
         </li>

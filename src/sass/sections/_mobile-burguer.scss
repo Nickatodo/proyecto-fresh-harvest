@@ -3,15 +3,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 130vh;
     overflow: scroll;
-
-    z-index: 100;
-
-    background-color: var(--color-bg-red);
-    transition: transform var(--var-3-animation);
+    z-index: 999;
+    background-color: $main-color;
     transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
   }
 
   .is-open {
@@ -26,10 +24,10 @@
     padding-left: 20px;
     padding-right: 20px;
 
-    width: 100%;
+    width: 100vw;
     height: 50px;
 
-    background-color: var(--color-white);
+    background-color: $color-primary;
   }
 
   .top-logo {
@@ -38,7 +36,7 @@
     gap: 8px;
   }
   .nav-logo {
-    fill: var(--color-bg-red);
+    fill: $main-color;
   }
 
   .menu-btn {
@@ -50,7 +48,7 @@
     padding: 0;
     width: 24px;
     height: 24px;
-    color: var(--color-bg-red);
+    color: $main-color;
     transition: color var(--var-1-animation);
   }
 
@@ -76,7 +74,7 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
 
-    color: var(--color-bg-red);
+    color: $main-color;
   }
 
   .menu-hamburger-list {
@@ -96,23 +94,24 @@
 
     text-align: center;
     letter-spacing: -0.04em;
-    color: var(--color-white);
+    color: $color-primary;
   }
 
   .mobile-nav__link {
     transition: color var(--var-1-animation);
+    color: $color-primary;
   }
 
   .mobile-nav__link:hover,
   .mobile-nav__link:focus {
-    color: var(--color-yellow)
+    color: $color-bg-green;
   }
 
   .basket-btn-down {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: var(--color-white);
+    color: $color-primary;
     transition: color var(--var-1-animation);
   }
 
@@ -132,6 +131,9 @@
 
 @media only screen and (min-width: 768px) {
   .menu-container {
+    display: none;
+  }
+  .menu-hamburger-top{
     display: none;
   }
 }
