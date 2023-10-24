@@ -80,10 +80,10 @@
 }
 
 @media (max-width: 1179px){
-    .description {
-        padding-top: 68px;
-        padding-bottom: 72px;
-    }
+    // .description {
+    //     padding-top: 0;
+    //     padding-bottom: 0;
+    // }
     .description__title{
         padding: 0 40px;
     }
@@ -100,10 +100,10 @@
 }
 
 @media (max-width: 767px){
-    .description {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+    // .description {
+    //     padding-top: 40px;
+    //     padding-bottom: 40px;
+    // }
     .description__title {
         padding: 0;
         font-size: 28px;
