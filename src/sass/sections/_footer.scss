@@ -84,7 +84,6 @@ text-transform: uppercase;
 @media screen and(max-width:375px) {
 
     .footer-container{
-        background-color: aqua;
         width: 100%;
         display:grid;
         grid-template-columns: repeat(1, 3fr);
@@ -123,7 +122,7 @@ text-transform: uppercase;
     }
     
 }
-@media screen and(min-width:376px ) and (max-width:768px){
+@media(min-width:376px ){
        .footer-menu{
         position: absolute;
         top: 250px;

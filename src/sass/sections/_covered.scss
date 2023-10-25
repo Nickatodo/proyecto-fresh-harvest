@@ -23,6 +23,7 @@
 }
 .covered__div {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -112,5 +113,13 @@
   }
   .covered__div {
     margin-bottom: 80px;
+  }
+}
+@media (max-width: 375px) {
+  .covered__position{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

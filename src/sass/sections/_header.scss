@@ -43,10 +43,10 @@ letter-spacing: -0.56px;
 }
 /*estilos para pantallas de menos de  375px*/
 
-// @media(max-width:375px){
-// .header-container{
-// display: grid;
-// grid-template-columns: repeat(1, 3fr);
-// align-items: flex-start;
-// }
-// }
+@media(max-width:375px){
+  .header-container{
+    width:100% ;
+    padding: 0px 0px ;
+    margin: 0;
+  }
+}
