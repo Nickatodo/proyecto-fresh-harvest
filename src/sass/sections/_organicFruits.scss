@@ -145,6 +145,10 @@ line-height: 24px; /* 133.333% */
 letter-spacing: -0.72px;
 text-transform: uppercase;
 margin: 0;
+&:hover{
+        background-color: $color-primary;
+        color: $color-button;
+    }
 }
 
 .fruits__btn{
